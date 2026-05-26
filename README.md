@@ -1,1 +1,1 @@
-# -Shopify-vs-Custom-E-Commerce
+# Shopify-vs-Custom-E-Commerce
