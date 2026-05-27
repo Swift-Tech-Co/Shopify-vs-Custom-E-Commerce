@@ -1,0 +1,128 @@
+{
+  "meta": {
+    "title": "Shopify vs Custom E-Commerce: Build vs Buy Comparison",
+    "description": "Structured comparison of Shopify (SaaS platform) versus a custom-built e-commerce solution across total cost, flexibility, time to market, and scalability.",
+    "version": "1.0.0",
+    "updated": "2026-05-26",
+    "source": "https://swifttechco.com/comparisons/shopify-vs-custom-ecommerce"
+  },
+  "solutions": {
+    "shopify": {
+      "name": "Shopify",
+      "vendor": "Shopify Inc.",
+      "type": "SaaS e-commerce platform",
+      "founded": 2006,
+      "plans": ["Basic ($39/mo)", "Shopify ($105/mo)", "Advanced ($399/mo)", "Plus ($2,300+/mo)"],
+      "transaction_fee_percent": "0.5 to 2.0 (waived with Shopify Payments)",
+      "website": "https://shopify.com"
+    },
+    "custom": {
+      "name": "Custom E-Commerce",
+      "type": "Purpose-built solution",
+      "common_stacks": ["Next.js + Stripe + PostgreSQL", "React + Node.js + Stripe", "Django + Stripe", "Laravel + Stripe"],
+      "typical_build_time_weeks": "16 to 52",
+      "typical_build_cost": "$40,000 to $300,000+"
+    }
+  },
+  "dimensions": [
+    {
+      "name": "Time to launch",
+      "shopify": { "rating": 5, "notes": "Days to weeks; theme selection, product import, payment setup, domain connect" },
+      "custom":  { "rating": 1, "notes": "4 to 12 months for full-featured build; discovery, design, development, testing, launch" }
+    },
+    {
+      "name": "Upfront cost",
+      "shopify": { "rating": 5, "notes": "Minimal; $0 to $300 for theme; Shopify plan from $39/mo; pay as you grow" },
+      "custom":  { "rating": 1, "notes": "$40,000 to $300,000+ for initial build depending on feature scope" }
+    },
+    {
+      "name": "Ongoing cost (low volume)",
+      "shopify": { "rating": 4, "notes": "$39 to $399/mo + transaction fees; predictable; includes hosting, CDN, updates" },
+      "custom":  { "rating": 3, "notes": "$200 to $2,000/mo hosting + ongoing maintenance team or retainer" }
+    },
+    {
+      "name": "Ongoing cost (high volume, $1M+/mo GMV)",
+      "shopify": { "rating": 2, "notes": "Shopify Plus from $2,300/mo; transaction fees add up; 3rd-party app costs accumulate" },
+      "custom":  { "rating": 4, "notes": "Infrastructure cost grows slowly; no per-transaction fees; fixed engineering team cost" }
+    },
+    {
+      "name": "Checkout customization",
+      "shopify": { "rating": 3, "notes": "Checkout Extensibility (Plus only) allows sections; core flow limited; no full control" },
+      "custom":  { "rating": 5, "notes": "100% control; custom checkout steps, upsells, A/B testing, payment methods" }
+    },
+    {
+      "name": "Design flexibility",
+      "shopify": { "rating": 3, "notes": "Liquid theme system powerful but constrained; Online Store 2.0 sections help; not pixel-perfect" },
+      "custom":  { "rating": 5, "notes": "Pixel-perfect design; any UI pattern possible; custom animations, interactions, layouts" }
+    },
+    {
+      "name": "App ecosystem",
+      "shopify": { "rating": 5, "notes": "8,000+ apps in App Store; most business needs covered; subscriptions, loyalty, reviews, ERP" },
+      "custom":  { "rating": 2, "notes": "Must build or integrate each feature from scratch; no plug-and-play apps" }
+    },
+    {
+      "name": "SEO capabilities",
+      "shopify": { "rating": 4, "notes": "Good baseline SEO; canonical URLs, sitemaps, meta control; limited URL structure control" },
+      "custom":  { "rating": 5, "notes": "Full URL control, custom structured data, server-side rendering, Core Web Vitals optimization" }
+    },
+    {
+      "name": "Scalability",
+      "shopify": { "rating": 5, "notes": "Shopify handles Black Friday flash sales for Fortune 500 brands; infrastructure managed" },
+      "custom":  { "rating": 4, "notes": "Can scale to any load with proper architecture; requires engineering investment" }
+    },
+    {
+      "name": "Third-party integrations (ERP, WMS, 3PL)",
+      "shopify": { "rating": 5, "notes": "Native connectors for NetSuite, SAP, Brightpearl, ShipBob, dozens of 3PLs" },
+      "custom":  { "rating": 3, "notes": "Must build each integration; APIs exist but custom work required" }
+    },
+    {
+      "name": "Ownership and lock-in",
+      "shopify": { "rating": 2, "notes": "Vendor lock-in; data export available but migration is painful; dependent on Shopify policy changes" },
+      "custom":  { "rating": 5, "notes": "Full ownership of code, data, and infrastructure; portable to any hosting" }
+    },
+    {
+      "name": "B2B and wholesale",
+      "shopify": { "rating": 4, "notes": "Shopify B2B (Plus only); company accounts, custom pricing, draft orders, net payment terms" },
+      "custom":  { "rating": 5, "notes": "Build any B2B workflow; custom quoting, approval chains, tiered pricing, PO integration" }
+    }
+  ],
+  "use_case_recommendations": [
+    {
+      "use_case": "DTC brand launching MVP",
+      "recommendation": "shopify",
+      "reason": "Launch in days, validate demand, zero upfront cost, app ecosystem covers growth needs"
+    },
+    {
+      "use_case": "Complex checkout with custom payment flows",
+      "recommendation": "custom",
+      "reason": "Shopify checkout constraints block custom multi-step flows, split payments, or specialized installment logic"
+    },
+    {
+      "use_case": "High-GMV brand ($1M+/mo) seeking to reduce fees",
+      "recommendation": "custom",
+      "reason": "Shopify Plus fees and 3rd-party app costs at scale often exceed custom build ROI threshold"
+    },
+    {
+      "use_case": "B2B marketplace or wholesale portal",
+      "recommendation": "custom",
+      "reason": "Complex pricing logic, company hierarchies, and approval workflows exceed Shopify B2B capabilities"
+    },
+    {
+      "use_case": "Omnichannel retail (online + POS)",
+      "recommendation": "shopify",
+      "reason": "Shopify POS integrates natively; inventory sync across channels is production-ready out of box"
+    },
+    {
+      "use_case": "Embedded commerce in an existing SaaS product",
+      "recommendation": "custom",
+      "reason": "Shopify cannot be embedded into another product's auth flow; custom checkout must own the UX"
+    }
+  ],
+  "cost_breakeven_analysis": {
+    "notes": "Custom build typically breaks even vs Shopify Plus when GMV exceeds $500,000/mo and checkout fees plus app costs exceed $5,000/mo",
+    "shopify_plus_monthly_min": 2300,
+    "typical_app_costs_at_scale": "1,000 to 5,000",
+    "custom_monthly_infrastructure": "500 to 2,000",
+    "custom_monthly_maintenance": "2,000 to 8,000"
+  }
+}
